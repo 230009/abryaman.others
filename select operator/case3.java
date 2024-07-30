@@ -5,50 +5,25 @@ public class case3 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int num = scan.nextInt();
-        String month = null;
+        String season = null;
         switch(num){
-            case 1:
-                month = "january";
+            case 1, 2, 12:
+                season = "winter";
                 break;
-            case 2:
-                month = "february";
+            case 3, 4, 5:
+                season = "spring";
                 break;
-            case 3:
-                month = "march";
+            case 6, 7, 8:
+                season = "summer";
                 break;
-            case 4:
-                month = "april";
-                break;
-            case 5:
-                month = "may";
-                break;
-            case 6:
-                month = "june";
-                break;
-            case 7:
-                month = "july";
-                break;
-            case 8:
-                month = "august";
-                break;
-            case 9:
-                month = "september";
-                break;
-            case 10:
-                month = "october";
-                break;
-            case 11:
-                month = "november";
-                break;
-            case 12:
-                month = "december";
+            case 9, 10, 11:
+                season = "autumn";
                 break;
             default:
                 System.out.println("error");
 
         }
-        System.out.println(month);
-
+        System.out.println(season);
     }
 
 }
